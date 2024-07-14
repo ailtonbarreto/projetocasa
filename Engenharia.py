@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import streamlit.components.v1 as components
+import requests as rq
 
 #----------------------------------------------------------------------------------------------------
 #page config
@@ -13,6 +14,12 @@ tab1, tab2 = st.tabs(["Custos","Projeto"])
 #----------------------------------------------------------------------------------------------------
 #dados
 link_projeto = "https://sketchfab.com/3d-models/5772-7636e807e8994849af58b1078c83bb66/embed"
+link_planilha = "https://docs.google.com/spreadsheets/d/e/2PACX-1vST4hynvdLNKaV0sVyg_vTtLGQmCnPPRgq8-TEztlYhG_rqVtlCjlOEbekBOufGVbbJDI5FMmJ6zhFZ/pubhtml"
+
+df = rq.get(link_planilha)
+
+with tab1:
+    df
 
 #----------------------------------------------------------------------------------------------------
 
