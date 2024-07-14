@@ -13,7 +13,7 @@ tab1, tab2 = st.tabs(["Custos","Projeto"])
 
 #----------------------------------------------------------------------------------------------------
 #dados
-link_projeto = "https://sketchfab.com/3d-models/5843-701c706d2af6416a863099e55981e218"
+link_projeto = "https://sketchfab.com/3d-models/5843-701c706d2af6416a863099e55981e218/embed"
 link_planilha = "https://docs.google.com/spreadsheets/d/e/2PACX-1vST4hynvdLNKaV0sVyg_vTtLGQmCnPPRgq8-TEztlYhG_rqVtlCjlOEbekBOufGVbbJDI5FMmJ6zhFZ/pub?output=csv"
 
 df = pd.read_csv(link_planilha)
